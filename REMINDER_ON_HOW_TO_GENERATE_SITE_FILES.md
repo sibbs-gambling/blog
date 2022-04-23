@@ -7,4 +7,10 @@ A few things to remember:
 How to re-generate the site after writing a new post:
   1. Write new post under a ``content/<whatever directory>/<new post>/<post name>.md``
   2. If <whatever directory> didn't exist yet you need to add it the ``config.toml`` as an entry under [[menu.main]]
-  3.
+  3. Double check that your post is ready to publish
+  4. ``cd`` to the ``blog_dot_star/`` directory
+  5. Run ``hugo``
+  6. ``cd`` to ``docs/``
+  7. Add, commit, and push the changes to the static-site repo
+  8. ``cd`` back to to the ``blog_dot_star/`` directory and add, commit, and push the changes to the content repo
+  9. Confirm the changes are made in the gh-pages site: https://sibbs-gambling.github.io/
