@@ -1,5 +1,5 @@
 ---
-title: __TODO__ The Basics of Spectral Clustering
+title: __IN PROGRESS__ The Basics of Spectral Clustering
 description: A beginner's introduction to the intuitive math behind spectral clustering and how it is useful versus other clustering methods.
 date: 2018-04-10
 categories: [ "Machine Learning" ]

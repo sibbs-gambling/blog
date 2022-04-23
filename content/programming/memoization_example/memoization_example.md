@@ -1,5 +1,5 @@
 ---
-title: __TODO__ Memoization in Python
+title: __IN PROGRESS__ Memoization in Python
 description: The basics of memoization and how to use it in Python.
 date: 2018-01-03
 categories: [ "Python" ]
