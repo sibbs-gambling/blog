@@ -1,0 +1,86 @@
+% ----------------------------- NO NEED TO WORRY ABOUT WHAT IS BELOW ---------------------------
+%--------------------
+% Packages
+% -------------------
+\documentclass[a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[pdftex]{graphicx} % Required for including pictures
+\usepackage[pdftex,linkcolor=black,pdfborder={0 0 0}]{hyperref} % Format links for pdf
+\usepackage{calc} % To reset the counter in the document after title page
+\usepackage{enumitem} % Includes lists
+\frenchspacing % No double spacing between sentences
+\linespread{1.2} % Set linespace
+\usepackage[paperwidth=175mm, paperheight=100mm, lmargin=0.1\paperwidth, rmargin=0.1\paperwidth, tmargin=0.1111\paperheight, bmargin=0.1111\paperheight]{geometry} %margins
+\usepackage[all]{nowidow} % Tries to remove widows
+\usepackage[protrusion=true,expansion=true]{microtype} % Improves typography, load after fontpackage is selected
+\usepackage{pdfpages}
+\usepackage[title]{appendix}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{colonequals}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{float}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=python,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+\usepackage{etoolbox}
+\patchcmd{\maketitle}{\@fnsymbol}{\@alph}{}{}  % Footnote numbers from symbols to small letters
+\usepackage{svg}
+\DeclareSymbolFont{symbolsC}{U}{pxsyc}{m}{n}
+\DeclareMathSymbol{\coloneqq}{\mathrel}{symbolsC}{"42}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+% ----------------------------- NO NEED TO WORRY ABOUT WHAT IS ABOVE ---------------------------
+
+%-----------------------
+% Title, Authors
+%-----------------------
+
+%-----------------------
+% Begin document
+%-----------------------
+\begin{document}
+\begin{algorithm}[H]
+\begin{algorithmic}[H]
+\State \textbf{\textit{Input:}} Weighted adjacency matrix $W \in \mathbb{R}^{N \times N}$, number of clusters $k$
+\State Compute degree matrix $D$
+\State $L \gets D - W$
+\State Compute first $k$ eigenvectors $v_1, ..., v_k$  of $L$ and stack them into $X \in \mathbb{R}^{N \times k}$
+\State $y_i \gets$ normalized ith row of $X \quad$   (note: $y_i \in \mathbb{R}^{k}$)
+\State Cluster $(y_i)_{i=1,...,n}$ into clusters $C_1, ..., C_k$ using k-means
+\State \textbf{\textit{Output:}} Clusters $A_1,...,A_k$ where $A_i = \{j | y_j \in C_i \}$
+\end{algorithmic}
+\end{algorithm}
+\end{document}
