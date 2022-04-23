@@ -29,7 +29,7 @@ What happens to the country, to the world, depends on what we do with what other
 <cite>Robert F. Kennedy in the foreword to Profiles in Courage.</cite>
 
 Each chapter balances giving the reader a solid understanding of the forces at play in
-the decisions by made the Senator (such as their political ambitions, past legislative agendas, etc.),
+the decisions made by the Senator (such as their political ambitions, past legislative agendas, etc.),
 as well as those within the country at large, but without it feeling like an onerous history lesson bogging
 down the main purpose of the book. After all, without the context, it would be hard to know how courageous a
 decision was.
