@@ -1,5 +1,5 @@
 A few things to remember:
-  - The static site files (everything under ``docs/`` so html/css/xml etc.) are in a separate repo [here](https://github.com/sibbs-gambling/sibbs-gambling.github.io) and excluded here (as per the .gitignore)
+  - The static site files (everything under ``docs/`` so html/css/xml etc.) are in a separate repo [here](https://github.com/sibbs-gambling/sibbs-gambling.github.io) and excluded in this repo (as per the .gitignore)
   - This repo contains all the raw content markdowns as well as ``TODO.md`` (plans for future posts)
   - The reason for this repo is to have a second copy (with version control) of the "master" files
 
