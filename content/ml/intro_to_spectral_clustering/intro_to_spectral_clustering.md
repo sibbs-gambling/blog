@@ -6,6 +6,8 @@ categories: [ "Machine Learning" ]
 tags: [
     "machine learning"
 ]
+markup: "mmark"
+math: true
 mathjax : true
 katex: true
 header-includes:

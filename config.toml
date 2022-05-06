@@ -42,6 +42,10 @@ publishDir = "docs"
   *blog dot star*, comes from the regular expression .* that
   matches an arbitrary string of any length. Similarly, I write about any topic
   I find interesting.
+
+  I've used Hugo, a static site generator, to build this site. It is hosted
+  on GitHub Pages. The hosting URL is my GitHub username,
+  a joke reference to Gibbs sampling.
   """
   # job = "Your job title"
   location = "New York, NY"
@@ -84,12 +88,18 @@ publishDir = "docs"
   url = "/programming"
 [[menu.main]]
   weight = 3
+  identifier = "finance_econ"
+  name = "Finance & Economics"
+  pre = "<i class=\"sidebar-button-icon fa fa-lg fa-dollar\"></i>"
+  url = "/finance_econ"
+[[menu.main]]
+  weight = 4
   identifier = "ml"
   name = "Machine Learning"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-code-fork\"></i>"
   url = "/ml"
 [[menu.main]]
-  weight = 4
+  weight = 5
   identifier = "books"
   name = "Book Reviews"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-book\"></i>"

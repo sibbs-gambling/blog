@@ -1,3 +1,10 @@
+## Currently Working On Posts
+- finance_econ/standard_errors/
+
+## Site Maintenance
+- Fix disqus links
+- Fix tags issue (when you click on a tag the page is just blank)
+
 ## Post Ideas
 - Justin's five big societal problems today
 
