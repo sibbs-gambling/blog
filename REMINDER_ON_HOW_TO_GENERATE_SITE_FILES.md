@@ -7,7 +7,7 @@ A few things to remember:
 How to re-generate the site after writing a new post:
   1. Write new post under a ``content/<whatever directory>/<new post>/<post name>.md``
   2. If ``<whatever directory>`` didn't exist yet you need to add it the ``config.toml`` as an entry under [[menu.main]]
-  3. Double check that your post is ready to publish
+  3. Double check that your post is ready to publish (by looking at local version ``hugo server -D``)
   4. ``cd`` to the ``blog_dot_star/`` directory
   5. Run ``hugo``
   6. ``cd`` to ``docs/``

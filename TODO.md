@@ -1,5 +1,7 @@
-## Currently Working On Posts
+## In Progress Posts
 - finance_econ/standard_errors/
+- ml/intro_to_spectral_clustering/
+- programming/memoization_example/
 
 ## Site Maintenance
 - Fix disqus links

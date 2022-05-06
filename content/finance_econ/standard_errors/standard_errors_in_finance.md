@@ -1,5 +1,5 @@
 ---
-title: 'Comparing Standard Error Estimation Methodologies'
+title: '__IN PROGRESS__ Comparing Standard Error Estimation Methodologies'
 description: 'Comparing SE estimation methods as used in finance.'
 date: 2022-04-23
 tags: [
@@ -26,6 +26,14 @@ estimation, this type of contribution to the literature is invaluable!
 I follow many of the paper's derivations and logic closely.
 ***Therefore, all credit (and big thanks) goes to Mitchell A. Peterson, I am merely reflecting my thoughts on his
 original work.***
+
+
+=====================
+Note to self:
+See here https://quant.stackexchange.com/questions/35756/fama-mac-beth-1973-vs-fixed-effect
+and pages saved in raindrop statistics/econometrics
+=====================
+
 
 # Introduction
 As the financial econometrics literature has progressed over the last handful of
